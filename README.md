@@ -16,7 +16,7 @@ Once installed, run the following commands after cloning the repo. Make sure you
 npm install
 ```
 
-In order to run the application on android platform, either on physical device or emulator, run the below command:
+In order to run the application, execute the below command:
 ```
 npm start
 ```
