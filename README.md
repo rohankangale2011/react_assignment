@@ -5,7 +5,7 @@ A react assignment application
 This application is responsible for fetching the most popular datalist from the NYTimes data set available.
 
 ## Quickstart
-Make sure that that you have <strong>create-react-app</strong> package installed on your system(either globally or locally). In case you have, you can install it
+Make sure that that you have <strong>create-react-app</strong> package installed on your system(either globally or locally). In case you don't have, you can install it
 by running the below command:
 ```
 npm install create-react-app -g
