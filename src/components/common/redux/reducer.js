@@ -15,11 +15,11 @@ const initialState = {
 export const commonReducer = (state = initialState, action) => {
   switch (action.type) {
     case COMMON_ACTIONS.SET_LOADER_VISIBILITY:
-        return {
-          ...state,
-          isLoaderVisible: action.payload
-        }
-    case COMMON_ACTIONS.SET_SNACKBAR_MESSAGE:
+      return {
+        ...state,
+        isLoaderVisible: action.payload
+      }
+    case COMMON_ACTIONS.SET_SNACKBAR_VISIBILITY:
       const {isVisible, message} = action.payload;
       return {
         ...state,

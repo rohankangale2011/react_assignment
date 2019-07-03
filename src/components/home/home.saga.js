@@ -22,13 +22,13 @@ export function* getNYData() {
       yield put({ type: HOME_ACTIONS.SET_DATA, payload: response.data.results });
     } else {
       // display toaster message when no dataset found
-      yield put({ type: COMMON_ACTIONS.SET_SNACKBAR_MESSAGE, payload: {isVisible: true, message: NO_DATA} });
+      yield put({ type: COMMON_ACTIONS.SET_SNACKBAR_VISIBILITY, payload: {isVisible: true, message: NO_DATA} });
     }
 
     yield put({ type: COMMON_ACTIONS.SET_LOADER_VISIBILITY, payload: false});
   } catch(err) {
     // display error message for the catched error callback
-    yield put({ type: COMMON_ACTIONS.SET_SNACKBAR_MESSAGE, payload: {isVisible: true, message: API_ERROR} });
+    yield put({ type: COMMON_ACTIONS.SET_SNACKBAR_VISIBILITY, payload: {isVisible: true, message: API_ERROR} });
     yield put({ type: COMMON_ACTIONS.SET_LOADER_VISIBILITY, payload: false});
   }
 }

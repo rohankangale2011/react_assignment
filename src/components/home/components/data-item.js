@@ -11,7 +11,7 @@ import ImageIcon from '@material-ui/icons/Image';
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import {
-  TableWrapper,
+  DataItemWrapper,
   Title,
   SubTitle,
   SubTitleDate,
@@ -45,7 +45,7 @@ const RenderItem = React.memo(({title,byline,publishedDate}) => {
 
 export default function DataItem({data}) {
   return (
-    <TableWrapper>
+    <DataItemWrapper>
       <StyledList>
         {data.map(item => (
          <RenderItem 
@@ -56,6 +56,6 @@ export default function DataItem({data}) {
         />
         ))}
       </StyledList>
-    </TableWrapper>
+    </DataItemWrapper>
   );
 }

@@ -1,9 +1,11 @@
-import SnackbarContent from '@material-ui/core/SnackbarContent';
+import Snackbar from '@material-ui/core/Snackbar';
 import styled from 'styled-components';
 import {ERROR_COLOR} from '../../../constant/color';
 
-export const StyledSnackbarWrapper = styled(SnackbarContent)`
+export const StyledSnackbar = styled(Snackbar)`
   && {
-    background-color: ${ERROR_COLOR};
+    > div {
+      background-color: ${ERROR_COLOR};
+    }
   }
 `;

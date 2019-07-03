@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import {setSnackbarVisibility} from '../common/redux/action';
 import HomeComponent from './home.component';
 import {getNYData} from './home.action';
 
@@ -13,7 +14,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    getNYData: () => dispatch(getNYData())
+    getNYData: () => dispatch(getNYData()),
+    setSnackbarVisibility: (isVisible, message) => dispatch(setSnackbarVisibility(isVisible, message))
   }
 }
 

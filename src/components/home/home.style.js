@@ -6,7 +6,7 @@ import {
   SECONDARY_TEXT_COLOR
 } from '../../constant/color';
 
-export const TableWrapper = styled.div`
+export const DataItemWrapper = styled.div`
   padding: 15px;
   width: 70%;
   margin: 60px auto 0;
